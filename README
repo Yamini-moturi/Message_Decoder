@@ -1,1 +1,25 @@
-The program reads the inputs from a external file and decodes the pyramid and gives the message.
+# Program Question:
+- write a python decode program to decode the given input file, the input.txt file consists of some random data with codeded values.
+- Example1 : Filename=smallinputs.txt
+- Data:
+- 3 love
+- 6 computers
+- 2 dogs
+- 4 cats
+- 1 I
+- 5 you
+
+# consider pyramid pattern:
+-    1 
+-   2 3 
+-  4 5 6 
+
+# output values:
+- I love computers
+- Explanation:
+- The decoded messaage lies in the each ending value/number in the pyramid.
+
+# Inputfile: coding_qual_input.txt
+
+# output values:
+- down dont nine lot work silver east duck done tone bit stop sun deal huge moment poem hold make like possible clock of bought
