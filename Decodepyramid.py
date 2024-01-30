@@ -14,12 +14,17 @@ def readfile_createdict(message_file):
 
     return inputpairs
 
+def calculate_rows(total_values):
+    # Using the quadratic formula to calculate the number of rows
+    rows = (-1 + math.sqrt(1 + 8 * total_values)) / 2
+    return int(rows)
+
+
 if __name__ == "__main__":
     file_path = "coding_qual_input.txt"  # Replace with the actual file path
     key_value_pairs = readfile_createdict(file_path)
     linecount=len(key_value_pairs) #calculating the line count of files
+    rows=calculate_rows(linecount)
+    print(linecount) 
    
-   
-    print(key_value_pairs)
-    for key, value in key_value_pairs.items():
-        print(f"{key}: {value}")
+  
