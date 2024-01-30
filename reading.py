@@ -1,17 +1,16 @@
-def print_pyramid(rows):
-    count=1
-    for i in range(1, rows + 1):
-        # Print leading spaces
-        print(" " * (rows - i), end="")
 
-        # Print numbers in increasing order
-        for j in range(1, i + 1):
-            print(count, end=" ")
-            count+=1
+def read_file_and_create_dict(message_file):
+    input_pairs = {}  # Initialize a dictionary to store key-value pairs from the input file
 
-        # Move to the next line for the next row
-        print()
+    # Read the input text file lines
+    with open(message_file, 'r') as file:
+        for line in file:
+            # Split each line into a list [number, word]
+            line_parts = line.strip().split()
 
-# Example usage:
-pyramid_rows = 3  # Replace with the desired number of rows
-print_pyramid(pyramid_rows)
+            # Ensure the line is in the correct format (number followed by a word)
+            if len(line_parts) == 2:
+                number, word = line_parts
+                input_pairs[int(number)] = word
+
+    return input_pairs
