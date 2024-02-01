@@ -10,7 +10,7 @@ def print_pyramid(rows):
             count+=1
 
         # Move to the next line for the next row
-        print()
+        print() #printing the number
 
 # Example usage:
 pyramid_rows = 15  # Replace with the desired number of rows
